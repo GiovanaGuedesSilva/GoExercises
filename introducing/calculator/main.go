@@ -7,13 +7,13 @@ package main
 */
 
 import (
+	"calculator/stack"
 	"fmt"
-	"calculator"
 )
 
 func main() {
 	// Create a new stack
-	s := calculator.MakeStack()
+	s := stack.MakeStack()
 
 	// Push numbers 10, 5, and 3 onto the stack
 	s.Push(10)

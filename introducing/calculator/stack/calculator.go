@@ -1,5 +1,4 @@
-// calculator/calculator.go
-package calculator
+package stack
 
 // node represents an element in the stack, holding an integer value
 type node struct {
@@ -34,7 +33,7 @@ func (s *Stack) Pop() *node {
 	if l == 0 {
 		return nil // empty stack
 	}
-	n := &s.nodes[l-1:][0] // get the last element
+	n := &s.nodes[l-1:][0]  // get the last element
 	s.nodes = s.nodes[:l-1] // remove the last element
 	return n
 }
